@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <title>E-commerce</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-store'></i>Miniextra</a>
+
+        <ul class="navegação">
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="index.html">Produtos</a></li>
+            <li><a href="Sobre nós.html">Sobre nós</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <a href="https://www.instagram.com/luanchaaves11/" target="_blank">
+                <i class='bx bx-cart'></i>
+            </a>
+            
+        <div id="menu">
+            <a href="https://www.instagram.com/luanchaaves11/" target="_blank">
+                <i class='bx bx-menu'></i>
+            </a>
+        </div>
+        </div>
+
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="imagens/maça.png" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Frutas <br> frescas</h1>
+            <h5>Boas frutas tem sabor de alegria</h5>
+            <h3>Qualquer fruta<br> R$5,99kg</h3>
+            <a href="#" class="btn">Compre agora</a>
+
+        </div><!--home-text-->
+    </section><!--home-->
+
+    <div class="main">
+        <div class="row">
+            <li><img src="imagens/maca-main.png" onclick="slider('imagens/maça.png')"></li>
+        </div><!--row-->
+
+            <div class="row2">
+                <li><img src="imagens/laranja-main.png" onclick="slider('imagens/laranja.png')"></li>
+            </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="imagens/limao-main.png" onclick="slider('imagens/limao.png')"></li>
+        </div><!--row3--> 
+    </div><!--main-->
+    
+    <footer class="footer">
+        <div>
+            <img src=>
+        </div>
+
+        <p>Copyright 2023 / Dev Luan Chaves- Todos direitos reservados</p>
+
+    </footer>
+
+
+    <script>
+        function slider (anything){
+        document.querySelector ('.one') .src = anything;
+    };
+
+    let menu = document.querySelector ('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle ('bx-x')
+        navbar.classList.toggle ('open');
+    }
+    </script>
+    
+</body>
+</html>
